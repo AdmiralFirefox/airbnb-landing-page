@@ -1,4 +1,2 @@
-# Airbnb Landing Page
-
-## About
+## Airbnb Landing Page
 A landing page for airbnb for our CCS 223 Activity
