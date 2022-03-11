@@ -191,7 +191,7 @@ header > nav > a:hover {
 .swiper-slide div p:first-child {
   color: var(--black-color);
   text-align: left;
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
   font-size: 1.5rem;
   line-height: 1.1em;
 }
@@ -199,6 +199,7 @@ header > nav > a:hover {
 .swiper-slide div p {
   color: var(--black-color);
   text-align: left;
+  font-size: 1rem;
 }
 
 .swiper-slide div a {
@@ -208,6 +209,7 @@ header > nav > a:hover {
   margin-bottom: 1em;
   margin-top: 1em;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 /* Next Button */
