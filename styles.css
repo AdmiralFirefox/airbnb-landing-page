@@ -4,6 +4,15 @@
   --light-gray-color: #b0b0b0cc;
   --light-black-color: #222222;
   --pink-color: #ff385c;
+  --pink-gradient-color: radial-gradient(
+    circle at left,
+    #ff385c 0%,
+    #e61e4d 27.5%,
+    #e31c5f 40%,
+    #d70466 57.5%,
+    #bd1e59 75%,
+    #bd1e59 100%
+  );
   --light-gray-color: #717171;
   --gray-color: #484848;
   --slightly-dark-gray-color: #333333;
@@ -14,6 +23,98 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+header {
+  position: relative;
+  z-index: 2;
+  margin: 1.3em 0.8em;
+}
+
+header > nav > a {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  background: none;
+  padding: 0.35em;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+header > nav > a:hover {
+  background: var(--gray-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("assets/herosectionimage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 34em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2em;
+  box-shadow: inset 10px 10px 500px var(--black-color);
+}
+
+.hero-section h2 {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  margin-top: 4em;
+  font-weight: 700;
+}
+
+.hero-section h1 {
+  color: var(--white-color);
+  font-size: clamp(2rem, 5vw, 3.7rem);
+  width: min(100%, 10em);
+  margin-top: 0.2em;
+}
+
+.hero-section p {
+  color: var(--white-color);
+  width: min(100%, 23em);
+  margin-top: 1em;
+  font-size: clamp(0.9rem, 1.7vw, 1.3rem);
+  line-height: 1.5em;
+}
+
+.hero-section button {
+  margin-top: 1.5em;
+  padding: 1em 1.5em;
+  color: var(--white-color);
+  outline: none;
+  background: var(--pink-gradient-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-section button:active {
+  background: var(--pink-color);
+  transform: scale(0.92);
+}
+
+@media (min-width: 50em) {
+  .hero-section {
+    padding: 2em 5em;
+  }
+
+  .hero-section h2 {
+    margin-top: 3.2em;
+  }
+
+  .hero-section h1 {
+    width: 10em;
+  }
+
+  .hero-section p {
+    width: 22em;
+  }
 }
