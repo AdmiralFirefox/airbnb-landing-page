@@ -55,7 +55,7 @@ header > nav > a:hover {
   background-position: center;
   height: 34em;
   padding: 2em;
-  box-shadow: inset 10px 10px 500px var(--black-color);
+  box-shadow: inset 150px 0px 300px var(--black-color);
 }
 
 .hero-section h2 {
@@ -274,5 +274,82 @@ header > nav > a:hover {
     font-weight: 700;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+  }
+}
+
+/* Host Section */
+.host-section {
+  background: url("./assets/hostimage.jpg");
+  background-size: cover;
+  background-position: center;
+  width: min(90%, 75em);
+  height: 100%;
+  margin: 4em auto;
+  border-radius: 15px;
+  padding: 2em;
+  box-shadow: inset 150px 0px 300px var(--black-color);
+}
+
+.host-section h2 {
+  color: var(--white-color);
+  font-size: 1rem;
+}
+
+.host-section h1 {
+  color: var(--white-color);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  width: min(100%, 11em);
+  margin-top: 0.5em;
+}
+
+.host-section h1 span {
+  color: var(--pink-color);
+}
+
+.host-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.host-section div button {
+  padding: 1em 1.5em;
+  color: var(--white-color);
+  outline: none;
+  background: var(--pink-gradient-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.host-section button:hover {
+  background: var(--pink-color);
+}
+
+.host-section div p {
+  color: var(--white-color);
+  text-decoration: underline;
+  margin-top: 1.5em;
+}
+
+@media (min-width: 46em) {
+  .host-section {
+    margin: 7em auto;
+    padding: 3em 5em;
+    height: 30em;
+  }
+}
+
+@media (min-width: 55em) {
+  .host-section div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .host-section div p {
+    margin-left: 2em;
+    margin-top: 0em;
   }
 }
