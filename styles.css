@@ -152,3 +152,125 @@ header > nav > a:hover {
     margin: 4em 5em;
   }
 }
+
+/* Carousel Section */
+.swiper {
+  width: min(90%, 75em);
+  height: 100%;
+  margin-bottom: 2em;
+  margin-top: 5em;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  list-style: none;
+  font-size: 18px;
+  background: var(--slightly-white-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+.swiper-slide div {
+  padding: 2em 1.5em;
+}
+
+.swiper-slide div p:first-child {
+  color: var(--black-color);
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  line-height: 1.1em;
+}
+
+.swiper-slide div p {
+  color: var(--black-color);
+  text-align: left;
+}
+
+.swiper-slide div a {
+  color: var(--black-color);
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+/* Next Button */
+.swiper-button-next::after {
+  display: none;
+}
+
+/* Prev Button */
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* Bullets */
+.swiper-pagination-bullet-active {
+  background-color: var(--black-color) !important;
+}
+
+@media (min-width: 46em) {
+  .swiper {
+    height: 30em;
+  }
+
+  .swiper-slide {
+    flex-direction: row;
+  }
+
+  .swiper-slide img {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .swiper-slide div {
+    padding: 2.5em;
+  }
+
+  .swiper-slide div a {
+    margin-bottom: 0;
+  }
+
+  /* Next Button */
+  .swiper-button-next::after {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.1rem !important;
+    background: var(--white-color);
+    padding: 0.5em;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+  /* Prev Button */
+  .swiper-button-prev::after {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.1rem !important;
+    background: var(--white-color);
+    padding: 0.5em;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+}
