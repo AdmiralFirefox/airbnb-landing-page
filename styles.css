@@ -72,6 +72,7 @@ header > nav > a:hover {
   font-size: clamp(2rem, 5vw, 3.7rem);
   width: min(100%, 10em);
   margin-top: 0.2em;
+  line-height: 1em;
 }
 
 .hero-section p {
