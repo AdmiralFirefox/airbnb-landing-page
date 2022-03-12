@@ -360,7 +360,7 @@ header > nav > a:hover {
 }
 
 .swiper-section-2 h1 {
-  color: var(--black-color);
+  color: var(--light-black-color);
   font-size: clamp(1.7rem, 3vw, 2.5rem);
   margin: 0em 1em 1em 0.8em;
 }
@@ -393,7 +393,7 @@ header > nav > a:hover {
 }
 
 .swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide h2 {
-  color: var(--black-color);
+  color: var(--light-black-color);
   margin-top: 0.7em;
   line-height: 1.2em;
   font-size: 1.2rem;
@@ -401,7 +401,7 @@ header > nav > a:hover {
 }
 
 .swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide p {
-  color: var(--black-color);
+  color: var(--light-black-color);
   margin-top: 0.8em;
   padding-right: 0.4em;
   margin-bottom: 3.3em;
@@ -454,5 +454,76 @@ header > nav > a:hover {
 @media (min-width: 46em) {
   .swiper-section-2 h1 {
     margin-left: 2em;
+  }
+}
+
+/* Question Section */
+.question-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0em 1.5em 5em 1.5em;
+}
+
+.question-section div:first-child {
+  width: 100%;
+}
+
+.question-section div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.question-section div h2 {
+  color: var(--black-color);
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  font-size: 1.2rem;
+}
+
+.question-section div h1 {
+  color: var(--light-black-color);
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  width: min(90%, 12em);
+}
+
+.question-section div button {
+  margin-top: 1.3em;
+  padding: 1em 1.5em;
+  outline: none;
+  background: var(--light-black-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.question-section div button:hover {
+  background: var(--black-color);
+}
+
+@media (min-width: 46em) {
+  .question-section {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0em 2.5em 7em 2.5em;
+  }
+
+  .question-section div:first-child {
+    width: 70em;
+  }
+
+  .question-section div h2 {
+    margin-top: 0em;
+  }
+}
+
+@media (min-width: 56em) {
+  .question-section {
+    margin: 0em 5em 7em 5em;
   }
 }
