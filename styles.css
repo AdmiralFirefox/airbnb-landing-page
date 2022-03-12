@@ -542,7 +542,8 @@ header > nav > a:hover {
 .support-section div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-  grid-gap: 2em;
+  grid-row-gap: 3.5em;
+  grid-column-gap: 2em;
 }
 
 .support-section div article {
@@ -562,13 +563,18 @@ header > nav > a:hover {
 
 .support-section div article div a {
   margin-top: 1.2em;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--black-color);
+  font-weight: 700;
 }
 
 @media (min-width: 40em) {
   .support-section {
     padding: 0em 3em 5.5em 3em;
+  }
+
+  .support-section div {
+    grid-gap: 2em;
   }
 }
 
