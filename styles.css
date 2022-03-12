@@ -154,7 +154,7 @@ header > nav > a:hover {
 }
 
 /* Carousel Section */
-.swiper {
+.mySwiper {
   width: min(90%, 75em);
   height: 100%;
   margin-bottom: 2em;
@@ -162,7 +162,7 @@ header > nav > a:hover {
   border-radius: 20px;
 }
 
-.swiper-slide {
+.mySwiper .swiper-wrapper .swiper-slide {
   text-align: center;
   list-style: none;
   font-size: 18px;
@@ -173,7 +173,7 @@ header > nav > a:hover {
   align-items: center;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -184,11 +184,11 @@ header > nav > a:hover {
   border-bottom-right-radius: 0px;
 }
 
-.swiper-slide div {
+.mySwiper .swiper-wrapper .swiper-slide div {
   padding: 2em 1.5em;
 }
 
-.swiper-slide div p:first-child {
+.mySwiper .swiper-wrapper .swiper-slide div p:first-child {
   color: var(--black-color);
   text-align: left;
   margin-bottom: 0.9em;
@@ -196,13 +196,13 @@ header > nav > a:hover {
   line-height: 1.1em;
 }
 
-.swiper-slide div p {
+.mySwiper .swiper-wrapper .swiper-slide div p {
   color: var(--black-color);
   text-align: left;
   font-size: 1rem;
 }
 
-.swiper-slide div a {
+.mySwiper .swiper-wrapper .swiper-slide div a {
   color: var(--black-color);
   display: flex;
   justify-content: flex-start;
@@ -213,12 +213,12 @@ header > nav > a:hover {
 }
 
 /* Next Button */
-.swiper-button-next::after {
+.mySwiper .swiper-button-next::after {
   display: none;
 }
 
 /* Prev Button */
-.swiper-button-prev::after {
+.mySwiper .swiper-button-prev::after {
   display: none;
 }
 
@@ -228,15 +228,15 @@ header > nav > a:hover {
 }
 
 @media (min-width: 46em) {
-  .swiper {
+  .mySwiper {
     height: 30em;
   }
 
-  .swiper-slide {
+  .mySwiper .swiper-wrapper .swiper-slide {
     flex-direction: row;
   }
 
-  .swiper-slide img {
+  .mySwiper .swiper-wrapper .swiper-slide img {
     width: 50%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -244,16 +244,16 @@ header > nav > a:hover {
     border-bottom-right-radius: 0px;
   }
 
-  .swiper-slide div {
+  .mySwiper .swiper-wrapper .swiper-slide div {
     padding: 2.5em;
   }
 
-  .swiper-slide div a {
+  .mySwiper .swiper-wrapper .swiper-slide div a {
     margin-bottom: 0;
   }
 
   /* Next Button */
-  .swiper-button-next::after {
+  .mySwiper .swiper-button-next::after {
     display: block;
     color: var(--black-color);
     font-size: 1.1rem !important;
@@ -265,7 +265,7 @@ header > nav > a:hover {
   }
 
   /* Prev Button */
-  .swiper-button-prev::after {
+  .mySwiper .swiper-button-prev::after {
     display: block;
     color: var(--black-color);
     font-size: 1.1rem !important;
@@ -351,5 +351,83 @@ header > nav > a:hover {
   .host-section div p {
     margin-left: 2em;
     margin-top: 0em;
+  }
+}
+
+/* Carousel Section 2*/
+.swiper-section-2 {
+  margin: 0em auto 7em auto;
+}
+
+.swiper-section-2 h1 {
+  color: var(--black-color);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  margin: 0em 1em 1em 0.8em;
+}
+
+.swiper-section-2 .mySwiper2 {
+  height: 100%;
+  width: min(90%, 70em);
+}
+
+.swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide {
+  list-style: none;
+}
+
+.swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 14em;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide h2 {
+  color: var(--black-color);
+  margin-top: 0.7em;
+  line-height: 1.2em;
+  font-size: 1.2rem;
+}
+
+.swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide p {
+  color: var(--black-color);
+  margin-top: 0.8em;
+}
+
+.swiper-section-2 .mySwiper2 .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-section-2 .mySwiper2 .swiper-button-next::after {
+  display: none;
+}
+
+@media (min-width: 30em) {
+  .swiper-section-2 .mySwiper2 .swiper-button-prev::after {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.1rem !important;
+    background: var(--white-color);
+    padding: 0.5em;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+
+  .swiper-section-2 .mySwiper2 .swiper-button-next::after {
+    display: block;
+    color: var(--black-color);
+    font-size: 1.1rem !important;
+    background: var(--white-color);
+    padding: 0.5em;
+    font-weight: 700;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 46em) {
+  .swiper-section-2 h1 {
+    margin-left: 2em;
   }
 }
