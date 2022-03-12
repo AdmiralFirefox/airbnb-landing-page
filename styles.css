@@ -591,7 +591,6 @@ header > nav > a:hover {
   background-position: center;
   box-shadow: inset 150px 0px 300px var(--black-color);
   height: 25em;
-  margin-bottom: 5em;
   padding: 0em 1.5em;
   display: flex;
   flex-direction: column;
@@ -632,5 +631,191 @@ header > nav > a:hover {
     height: 35em;
     padding: 0em 4em;
     margin-top: 1em;
+  }
+}
+
+/* Sign Up Section */
+.sign-up-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5em 2em;
+  background: var(--slightly-white-color);
+}
+
+.sign-up-section article {
+  margin-bottom: 2em;
+}
+
+.sign-up-section article h1 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  width: min(100%, 15em);
+  color: var(--light-black-color);
+}
+
+.sign-up-section article p {
+  width: min(100%, 30em);
+  margin-top: 2em;
+  color: var(--light-black-color);
+  line-height: 1.5em;
+}
+
+.sign-up-section .sign-up-info div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sign-up-section .sign-up-info div:first-child label {
+  color: var(--light-black-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.sign-up-section .sign-up-info div:first-child input {
+  padding: 1em;
+  border: 3px solid var(--gray-color);
+  margin-bottom: 2em;
+  width: min(100%, 35em);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.sign-up-section .sign-up-info div:first-child input:focus {
+  outline: none;
+  border: 3px solid var(--black-color);
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.7em;
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .container {
+  display: block;
+  position: relative;
+  padding-left: 2.1em;
+  margin-bottom: 0.75em;
+  cursor: pointer;
+  font-size: 1em;
+  user-select: none;
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.8em;
+  width: 1.8em;
+  background: var(--white-color);
+  border: 2px solid var(--light-gray-color);
+  border-radius: 5px;
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .container .checkmark:hover {
+  border: 2px solid var(--black-color);
+}
+
+.sign-up-section
+  .sign-up-info
+  div:nth-child(2)
+  .container
+  input:checked
+  ~ .checkmark {
+  background: var(--black-color);
+  border: 2px solid var(--black-color);
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sign-up-section
+  .sign-up-info
+  div:nth-child(2)
+  .container
+  input:checked
+  ~ .checkmark:after {
+  display: block;
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) .container .checkmark:after {
+  left: 0.5em;
+  top: 0.2em;
+  width: 0.3em;
+  height: 0.6em;
+  border: solid var(--white-color);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.sign-up-section .sign-up-info div:nth-child(2) p {
+  color: var(--light-black-color);
+  width: min(100%, 30em);
+  margin-left: 0.5em;
+  line-height: 1.5em;
+  font-size: 0.9rem;
+}
+
+.sign-up-section .sign-up-info button {
+  padding: 1em 1.5em;
+  outline: none;
+  background: var(--light-black-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background 0.5s ease-in-out;
+}
+
+.sign-up-section .sign-up-info button:hover {
+  background: var(--black-color);
+}
+
+.sign-up-section .sign-up-info .privacy-policy {
+  color: var(--light-gray-color);
+  margin-top: 2em;
+  width: min(100%, 30em);
+  font-size: 0.9rem;
+  line-height: 1.4em;
+}
+
+.sign-up-section .sign-up-info .privacy-policy a {
+  color: var(--black-color);
+}
+
+@media (min-width: 46em) {
+  .sign-up-section {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5em 2.5em;
+  }
+
+  .sign-up-section article {
+    margin-bottom: 0em;
+    padding-right: 3em;
+  }
+
+  .sign-up-section article h1 {
+    width: min(100%, 10em);
+  }
+}
+
+@media (min-width: 56em) {
+  .sign-up-section {
+    padding: 5em 4.5em;
   }
 }
