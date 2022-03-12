@@ -510,7 +510,7 @@ header > nav > a:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
-    margin: 0em 2.5em 7em 2.5em;
+    margin: 0em 2.5em 5em 2.5em;
   }
 
   .question-section div:first-child {
@@ -524,6 +524,56 @@ header > nav > a:hover {
 
 @media (min-width: 56em) {
   .question-section {
-    margin: 0em 5em 7em 5em;
+    margin: 0em 5em 3.5em 5em;
+  }
+}
+
+/* Support Section */
+.support-section {
+  padding: 0em 1em 5.5em 1em;
+}
+
+.support-section h1 {
+  color: var(--light-black-color);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  margin-bottom: 1em;
+}
+
+.support-section div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-gap: 2em;
+}
+
+.support-section div article {
+  padding-right: 0.5em;
+}
+
+.support-section div article h2 {
+  color: var(--light-black-color);
+  margin-bottom: 0.5em;
+}
+
+.support-section div article p {
+  color: var(--gray-color);
+  line-height: 1.7em;
+  font-size: 1rem;
+}
+
+.support-section div article div a {
+  margin-top: 1.2em;
+  font-size: 0.9rem;
+  color: var(--black-color);
+}
+
+@media (min-width: 40em) {
+  .support-section {
+    padding: 0em 3em 5.5em 3em;
+  }
+}
+
+@media (min-width: 56em) {
+  .support-section {
+    padding: 0em 5.5em 5.5em 5.5em;
   }
 }
