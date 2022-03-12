@@ -583,3 +583,54 @@ header > nav > a:hover {
     padding: 0em 5.5em 5.5em 5.5em;
   }
 }
+
+/* Journey Section */
+.journey-section {
+  background: url("assets/journeyimage.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 150px 0px 300px var(--black-color);
+  height: 25em;
+  margin-bottom: 5em;
+  padding: 0em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.journey-section h1 {
+  color: var(--white-color);
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  width: min(100%, 10em);
+}
+
+.journey-section p {
+  color: var(--white-color);
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+.journey-section button {
+  margin-top: 1.5em;
+  padding: 1em 1.5em;
+  color: var(--white-color);
+  outline: none;
+  background: var(--pink-gradient-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.journey-section button:hover {
+  background: var(--pink-color);
+}
+
+@media (min-width: 46em) {
+  .journey-section {
+    height: 35em;
+    padding: 0em 4em;
+    margin-top: 1em;
+  }
+}
