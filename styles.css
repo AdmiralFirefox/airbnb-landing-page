@@ -823,15 +823,18 @@ header > nav > a:hover {
 /* Footer */
 footer {
   background: var(--slightly-white-color);
-  padding: 3em 2em 4em 2em;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2em;
+  grid-gap: 1.5em;
+  padding: 2em;
   border-top: 2px solid var(--gray-color);
 }
 
+footer section {
+  border-bottom: 2px solid var(--gray-color);
+}
+
 footer section h1 {
-  color: var(--black-color);
+  color: var(--light-black-color);
   font-size: 1rem;
 }
 
@@ -846,7 +849,7 @@ footer section ul li {
 
 footer section ul li a {
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--light-black-color);
   line-height: 1.3em;
   font-size: 0.9rem;
 }
@@ -855,16 +858,32 @@ footer section ul li a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 36em) {
+@media (min-width: 42em) {
   footer {
-    padding: 3em 3em 4em 3em;
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3em;
+  }
+
+  footer section ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.2em;
   }
 }
 
-@media (min-width: 46em) {
+@media (min-width: 56em) {
   footer {
-    padding: 3em 5em 4em 5em;
     grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+    padding: 4em;
+    grid-gap: 2em;
+  }
+
+  footer section {
+    border-bottom: none;
+  }
+
+  footer section ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
