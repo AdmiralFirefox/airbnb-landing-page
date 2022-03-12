@@ -819,3 +819,52 @@ header > nav > a:hover {
     padding: 5em 4.5em;
   }
 }
+
+/* Footer */
+footer {
+  background: var(--slightly-white-color);
+  padding: 3em 2em 4em 2em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2em;
+  border-top: 2px solid var(--gray-color);
+}
+
+footer section h1 {
+  color: var(--black-color);
+  font-size: 1rem;
+}
+
+footer section ul {
+  margin-top: 1em;
+}
+
+footer section ul li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+footer section ul li a {
+  text-decoration: none;
+  color: var(--black-color);
+  line-height: 1.3em;
+  font-size: 0.9rem;
+}
+
+footer section ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 36em) {
+  footer {
+    padding: 3em 3em 4em 3em;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+}
+
+@media (min-width: 46em) {
+  footer {
+    padding: 3em 5em 4em 5em;
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  }
+}
