@@ -404,6 +404,7 @@ header > nav > a:hover {
   color: var(--black-color);
   margin-top: 0.8em;
   padding-right: 0.4em;
+  margin-bottom: 3.3em;
 }
 
 .swiper-section-2 .mySwiper2 .swiper-button-prev::after {
@@ -414,7 +415,15 @@ header > nav > a:hover {
   display: none;
 }
 
+.swiper-section-2 .mySwiper2 .swiper-pagination {
+  display: block;
+}
+
 @media (min-width: 30em) {
+  .swiper-section-2 .mySwiper2 .swiper-wrapper .swiper-slide p {
+    margin-bottom: 0em;
+  }
+
   .swiper-section-2 .mySwiper2 .swiper-button-prev::after {
     display: block;
     color: var(--black-color);
@@ -435,6 +444,10 @@ header > nav > a:hover {
     font-weight: 700;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+  }
+
+  .swiper-section-2 .mySwiper2 .swiper-pagination {
+    display: none;
   }
 }
 

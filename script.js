@@ -28,6 +28,10 @@ const swiper2 = new Swiper(".mySwiper2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     480: {
       slidesPerView: 2,
