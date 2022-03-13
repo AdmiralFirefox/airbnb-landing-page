@@ -568,10 +568,10 @@ header > nav > a:hover {
   color: var(--gray-color);
   line-height: 1.7em;
   font-size: 1rem;
+  margin-bottom: 1.2em;
 }
 
-.support-section div article div a {
-  margin-top: 1.2em;
+.support-section div article span a {
   font-size: 0.95rem;
   color: var(--black-color);
   font-weight: 700;
