@@ -165,7 +165,6 @@ header > nav > a:hover {
 .mySwiper .swiper-wrapper .swiper-slide {
   text-align: center;
   list-style: none;
-  font-size: 18px;
   background: var(--slightly-white-color);
   border-radius: 20px;
   display: flex;
@@ -202,12 +201,16 @@ header > nav > a:hover {
   font-size: 1rem;
 }
 
-.mySwiper .swiper-wrapper .swiper-slide div a {
-  color: var(--black-color);
+.mySwiper .swiper-wrapper .swiper-slide div span {
   display: flex;
   justify-content: flex-start;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide div span a {
+  color: var(--black-color);
+  text-align: left;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 1.3em;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -274,6 +277,12 @@ header > nav > a:hover {
     font-weight: 700;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+  }
+}
+
+@media (min-width: 56em) {
+  .mySwiper .swiper-wrapper .swiper-slide div {
+    padding: 2.5em 4.5em;
   }
 }
 
